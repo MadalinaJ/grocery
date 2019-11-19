@@ -1,0 +1,11 @@
+{
+  "name": "grocery",
+  "version": "1.0.0",
+  "description": "shared real-time grocery list",
+  "main": "index.js",
+  "scripts": {
+    "test": "export NODE_ENV=test&& jasmine"
+  },
+  "author": "Madalina",
+  "license": "ISC"
+}
