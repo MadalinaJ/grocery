@@ -24,6 +24,8 @@
 ### Databases and ORM:
 - PostgreSQL;
 - Sequelize;
+###Testing:
+- Jasmine
 ### Version-control
 - git
 ### Deployment
