@@ -2,7 +2,7 @@
  an app where the users can create and manage shopping lists. The Lists can be seen and updated by any user in a group at any given time; the same group of users can follow the same List at different locations and start shopping without purchasing the same product twice, unless specified  on the List. The app's purpose is to reduce shopping time
 
 ### Main focus:
-- User signs up;(email; password;)
+- User signs up;
 - User signs in;
 - User signs out;
 - User creates lists within different categories;
@@ -28,7 +28,6 @@
 - git
 ### Deployment
 - Heroku
-
 ### Future improvements:
 - allow lists to be private to a single user.
 - allow items to be prioritized.
