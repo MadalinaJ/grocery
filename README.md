@@ -12,7 +12,7 @@
 - User updates the items (edit items);
 - User updates an existing list;
 - User can see all the available lists and perform the above operations on them;
-
+- User 1 and User 2 can use the app at the same time on different devices and modify lists and items- on refresh the page is updating; 
 ### Technologies:
 - JavaScript;
 - Node.js;
