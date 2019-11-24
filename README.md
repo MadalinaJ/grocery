@@ -1,7 +1,7 @@
 ## Shared Real-time Grocery/Shopping List
-### an app where the users can create and manage shopping lists. The Lists can be seen and updated by any user in a group at any given time; the same group of users can follow the same List at different locations and start shopping without purchasing the same product twice, unless specified  on the List. The app's purpose is to reduce shopping time
+ an app where the users can create and manage shopping lists. The Lists can be seen and updated by any user in a group at any given time; the same group of users can follow the same List at different locations and start shopping without purchasing the same product twice, unless specified  on the List. The app's purpose is to reduce shopping time
 
-## Main focus:
+### Main focus:
 - User signs up;(email; password;)
 - User signs in;
 - User signs out;
@@ -13,7 +13,7 @@
 - User updates an existing list;
 - User can see all the available lists and perform the above operations on them;
 
-## Technologies:
+### Technologies:
 - JavaScript;
 - Node.js;
 - npm libraries(Express.js, etc);
@@ -21,15 +21,15 @@
 - Css;
 - Ejs;
 - Bootstrap;
-## Databases and ORM:
+### Databases and ORM:
 - PostgreSQL;
 - Sequelize;
-## Version-control
+### Version-control
 - git
-## Deployment
+### Deployment
 - Heroku
 
-## Future improvements:
+### Future improvements:
 - allow lists to be private to a single user.
 - allow items to be prioritized.
 - change the db to MongoDb (with Mongoose);
