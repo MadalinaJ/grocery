@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../static/partials/head.ejs %>
+  </head>
+  <body>
+    <% include ../static/partials/navbar.ejs %>
+
+    <main class="container">
+
+      <div id="content">
+      <div class="container">
+        <div class="jumbotron">
+      <h1 style="background-color: #2c3e50; color:#20c997; font-weight: bold"><%= item.title %></h1>
+
+      <% if(currentUser) { %>
+        <% include ../purchases/purchases.ejs %>
+        <% } %>
+
+      <a href="/lists/<%= item.listId %>/items/<%= item.id %>/edit" class="btn btn-warning" style="background-color: #20c997; color:#2c3e50; font-weight: bold">Edit</a>
+
+
+      <form style="display:initial" action="/lists/<%= item.listId %>/items/<%= item.id %>/destroy" method="post">
+       <button type="submit" class="btn btn-danger" style="background-color: #dc3545; color:#2c3e50; font-weight: bold">Delete</button>
+
+
+     </form>
+
+      <p style="color:#2c3e50;font-weight: bold"><%= item.description %></p>
+
+      <a href="/lists/<%= item.listId %>" class="btn btn-warning" style="color:#2c3e50; font-weight: bold">back to list</a>
+    </div>
+      </div>
+      </div>
+
+    </main>
+
+    <% include ../static/partials/baseScripts.ejs %>
+
+  </body>
+</html>

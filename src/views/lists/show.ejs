@@ -1,0 +1,49 @@
+
+ <!DOCTYPE html>
+<html>
+  <head>
+    <% include ../static/partials/head.ejs %>
+  </head>
+  <body>
+    <% include ../static/partials/navbar.ejs %>
+    <main class="container">
+      <div class="container">
+        <div class="jumbotron" >
+      <h1 style="background-color: #2c3e50; color: #dc3545;"><%= list.title %></h1>
+      <div id="content">
+       <a href="/lists/<%= list.id %>/edit" class="btn btn-warning" style="background-color:  #20c997; color:#2c3e50; font-weight: bold">Edit List Name</a>
+       <a href="/lists/" class="btn btn-warning" style="background-color: #2c3e50; color:#20c997;">back to list</a>
+
+        <form style="display:initial" action="/lists/<%= list.id %>/destroy" method="post">
+          <button type="submit" class="btn btn-danger" style="background-color: #dc3545; color:#2c3e50;font-weight: bold">Delete</button>
+        </form>
+
+        <% if(currentUser) { %>
+          <a href="/lists/<%= list.id %>/items/new" class="btn btn-success" style="background-color: #2c3e50; color:#20c997;font-weight: bold">Add Item</a>
+        <% } %>
+
+      <p style="color:#2c3e50; font-weight: bold"><%= list.description %></p>
+
+      <hr>
+      <div class="container">
+        <div class="jumbotron"style="background-color:#2c3e50; color:#20c997;">
+      <h1>Items</h1>
+        <ol class="list-group">
+          <% list.items.forEach((item) => { %>
+            <li class="list-group-item">
+         <a style="color:#2c3e50; font-weight: bold" href="/lists/<%= list.id %>/items/<%= item.id %>"> <%= item.title %> </a>
+          </li>
+        <% }) %>
+        </ol>
+      </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+    </main>
+
+    <% include ../static/partials/baseScripts.ejs %>
+
+  </body>
+</html> 
