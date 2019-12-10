@@ -143,7 +143,7 @@ describe("routes : lists", () => {
 
      it("should update the item with the given values", (done) => {
         const options = {
-           url: `${base}${List.id}/update`,
+           url: `${base}lists/${this.list.id}/update`,
            form: {
              title: "JavaScript Frameworks",
              description: "There are a lot of them"
