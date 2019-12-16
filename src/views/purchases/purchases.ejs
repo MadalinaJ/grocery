@@ -5,6 +5,6 @@
   </form>
 <% } else { %>
   <form style="display: initial;" action="/lists/<%= item.listId %>/items/<%= item.id %>/purchases/create" method="post">
-    <button type="submit" class="btn btn-primary">Item purchased</button>
+    <button type="submit" class="btn btn-primary" style="background-color:rgb(69, 245, 113); color: rgb(0, 102, 255); font-size: 12px;">Item purchased *</button>
   </form>
 <% } %>
