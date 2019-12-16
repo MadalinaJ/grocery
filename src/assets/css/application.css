@@ -1,18 +1,26 @@
 body {
-  padding-top: 54px;
-  background-color: #20c997;
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 10rem 0;
+  background-image: linear-gradient(to right top, #1c63cd, #0095f2, #00bdd4, #30e09a, #a8eb12);
+
 }
 
-nav {
- background-color: #20c997;
-}
+
 
 h1{
   padding-top: 5%;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 70px;
+  font-size: 17px;
+  font-weight: bold;
   text-align: center;
   padding-bottom: 5%;
+  background-color: #00db84;
+  font-weight: bold;
+  color:white;
+  border: 1px solid #0095f2;
 }
 
 h2{
@@ -23,17 +31,66 @@ h2{
 div.jumbotron {
   background-color: white;
   margin-top: 5%;
-  border: 1px solid black;
+  border: 1px solid #00db84;
+  
 }
 
 div.jumbotron#item {
   background-color: white;
   margin-top: 5%;
   border: 1px solid white;
+  opacity: 0.7;
+}
+.jumbotron{
+  background-color: white;
+  color:#0095f2;
+  text-align: center;
+}
+.display-3 {
+  background-color: #0095f2; 
+  color:white;
+  font-size: 20px; 
+  font-weight: bold;
+  border: 2px solid hsl(145, 98%, 41%);
 }
 
+.lead {
+  text-align: center;
+}
+.form-group{
+  text-align: center;
+}
+.btn.btn-success {
+  background-color: #0095f2;
+  color:white; 
+  border: 1px solid #00db84;
+  background-color: #0095f2;
+ 
+  
+}
+.btn.btn-warning {
+  background-color: #0095f2;
+  color:white; 
+  border: 1px solid #00db84;
+  background-color: #0095f2;
+}
 
+.btn.btn-danger {
+  background-color: #0095f2;
+  color:white; 
+  border: 1px solid #0095f2;
+  border: 1px solid #00db84;
+  background-color: #0095f2;
+}
+.btn-warning:focus, .btn-warning.focus {
+  box-shadow: 0 0 0 0.2rem #0095f2;
+}
 
+.btn-warning.disabled, .btn-warning:disabled {
+  color: #212529;
+  background-color:  #0095f2;
+  border-color:  #0095f2;;
+}
    a:active,
    a:focus{
        left: 0;

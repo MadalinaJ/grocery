@@ -1,10 +1,10 @@
 <% const purchase = item.getPurchaseFor(currentUser.id) %>
 <% if (purchase) { %>
   <form style="display: initial;" action="/lists/<%= item.listId %>/items/<%= item.id %>/purchases/<%= purchase.id %>/destroy" method="post">
-    <button type="submit" class="btn btn-danger" style="background-color: white; color:#dc3545; font-weight: bold">Item to be purchased</button>
+    <button type="submit" class="btn btn-danger">Item to be purchased</button>
   </form>
 <% } else { %>
   <form style="display: initial;" action="/lists/<%= item.listId %>/items/<%= item.id %>/purchases/create" method="post">
-    <button type="submit" class="btn btn-primary"style="background-color: #2c3e50; color:#20c997;font-weight: bold">Item purchased</button>
+    <button type="submit" class="btn btn-primary">Item purchased</button>
   </form>
 <% } %>
