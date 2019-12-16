@@ -20,7 +20,8 @@ h1{
   background-color: #00db84;
   font-weight: bold;
   color:white;
-  border: 1px solid #0095f2;
+  
+  border-radius: 8px;
 }
 
 h2{
@@ -51,7 +52,8 @@ div.jumbotron#item {
   color:white;
   font-size: 20px; 
   font-weight: bold;
-  border: 2px solid hsl(145, 98%, 41%);
+  border: 3px solid hsl(145, 96%, 47%);
+  border-radius: 7px;
 }
 
 .lead {
@@ -63,7 +65,7 @@ div.jumbotron#item {
 .btn.btn-success {
   background-color: #0095f2;
   color:white; 
-  border: 1px solid #00db84;
+  border: 1px solid  #0095f2;
   background-color: #0095f2;
  
   
@@ -71,7 +73,7 @@ div.jumbotron#item {
 .btn.btn-warning {
   background-color: #0095f2;
   color:white; 
-  border: 1px solid #00db84;
+  border: 1px solid  #0095f2;
   background-color: #0095f2;
 }
 
@@ -79,7 +81,7 @@ div.jumbotron#item {
   background-color: #0095f2;
   color:white; 
   border: 1px solid #0095f2;
-  border: 1px solid #00db84;
+  border: 1px solid  #0095f2;
   background-color: #0095f2;
 }
 .btn-warning:focus, .btn-warning.focus {
